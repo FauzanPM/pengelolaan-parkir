@@ -1,0 +1,304 @@
+/* login.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Tengahkan vertikal */
+    height: 100vh; /* Agar konten berada di tengah */
+}
+
+.login-frame {
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px; /* Diganti menjadi 400px agar tampilan lebih besar */
+    width: 80%; /* Menambahkan lebar agar sesuai dengan persentase container */
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 0px; /* Menambah padding agar lebih besar */
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 0px 0; /* Mengatur jarak atas dan bawah */
+}
+
+.logo img {
+    width: 80%; /* Diganti menjadi 50% agar sesuai dengan lebar div .logo */
+    border-radius: 15px; /* Menambah border-radius agar sesuai dengan frame */
+    margin: 0px 0; /* Mengatur jarak atas dan bawah */
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form {
+    width: 100%; /* Mengisi seluruh lebar container */
+    max-width: 470px; /* Maksimum lebar form */
+}
+
+hr {
+    border-top: 2px solid #00235B;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px 0; /* Mengurangi margin atas dan bawah */
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #00235B;
+}
+
+input[type="submit"] {
+    cursor: pointer; /* Menambahkan cursor pointer ketika diarahkan ke tombol submit */
+}
+
+.alert {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    max-width: 300px; /* Maksimum lebar alert */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none; /* Sembunyikan alert awalnya */
+}
+
+.alert-success {
+    background-color: #dff0d8; /* Warna background untuk alert sukses */
+    border: 1px solid #c8e5bc;
+    color: #3c763d; /* Warna teks untuk alert sukses */
+}
+
+.alert-danger {
+    background-color: #f2dede; /* Warna background untuk alert gagal */
+    border: 1px solid #ebccd1;
+    color: #a94442; /* Warna teks untuk alert gagal */
+}
+
+@media (max-width: 350px) {
+    .login-frame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: none;
+    }
+
+    .form-container {
+        width: 90%; /* Mengisi seluruh lebar container */
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 40%; /* Diganti menjadi 40% agar sesuai dengan lebar div .logo */
+        border-radius: 15px; /* Menambah border-radius agar sesuai dengan frame */
+    }
+}
+
+.bg-ungu {
+    background-color: #6386ff;
+}
+
+.container-btn-login{
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center; 
+    margin-top: 40px;
+}
+.button-login{
+    border-radius:50px ;
+    padding: 10px ;
+    background-color: #d737ff ;
+    color: white;
+    border: none;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.franklin-gothic {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.franklin-gothic-book {
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Fredoka-One{
+    font-family: 'Fredoka One', cursive;
+}
+
+.Franklin-Gothic-Demi {
+    font-family: "Franklin Gothic Demi", "Helvetica", sans-serif;
+}
+
+.Franklin-Gothic-Book {
+    font-family: "Franklin Gothic Book", Arial, sans-serif;
+}
+
+.text-2 {
+    font-size: 23px;
+}
+.fs-24p {
+    font-size: 24px;
+}
+
+.p-auth {
+    z-index: 10;
+    max-width: 400px;
+    margin: 0 auto; /* This centers the element horizontally */
+    color: white; /* Sets the background color to white */
+    text-align: center; /* Centers the text content inside the element */
+    padding: 20px; 
+}
+
+.circle {
+    z-index: 10;
+    width: 100px;
+    height: 100px;
+    background-color: white; /* Warna latar belakang lingkaran */
+    border-radius: 50%; /* Membuat sudut lingkaran */
+    margin-top: 20px; /* Jarak atas dari elemen di atasnya */
+    margin-bottom: 50px;
+    border: 1.5px solid #000; /* Border dengan ketebalan 5px dan warna hitam */
+}
+
+.svg-siparkir{
+    margin-left: -80px;
+    margin-top: -20px;
+}
+
+.wlcm {
+    margin-top: -220px;
+    margin-bottom: 50px;
+}
+
+
+
+.title-input{
+    font-size: 15px;
+    color: white;
+    margin-top: 30px;
+}
+
+.input-control {
+    padding-left: 15px;
+    border-radius: 30px;;
+    border-color: transparent;
+    margin-top: -20px;
+}
+
+.input-control::placeholder {
+    color: gray; /* Mengatur warna placeholder abu-abu */
+    text-decoration: underline; /* Menambahkan underline pada placeholder */
+}
+
+.-mb-2{
+    margin-bottom: -10px;
+}
+
+.div-vector {
+    margin-left: -1%;
+    display: flex;
+    align-items: center; /* Centers the image vertically */
+    justify-content: center; 
+}
+
+
+.row img {
+    margin-left: -15px;
+    position: relative;
+    height: 100%; /* Makes the image take up the full height of the div */
+    width: auto; /* Maintains the aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the div without being cropped */
+}
+
+.div-vector h3 {
+    z-index: 10;
+}
+
+.row img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.left {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .circle {
+        margin-left: 30px;
+    }
+    footer {
+        background: linear-gradient(to right, #d737ff, #6386ff);
+    }
+
+    .div-vector,
+    .desktop,
+    .row img {
+        display: none;
+    }
+
+    .left {
+        display: block;
+    }
+
+    .login-frame {
+        z-index: 0;
+    }
+
+
+}
+
+@media (max-width: 770px) {
+    .login-frame {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+footer {
+    padding-top: 20px;
+    padding-left: 120px;
+    z-index: 10;
+    color: #fff; /* Warna teks footer */
+    text-align: left; /* Teks di kiri */
+    position: fixed; /* Tetap di bawah layar */
+    bottom: 0; /* Di bagian bawah */
+    left: 0; /* Di bagian kiri */
+    width: 100%; /* Lebar sesuai dengan layar */
+  }
+  

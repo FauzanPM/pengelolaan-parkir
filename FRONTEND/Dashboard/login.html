@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="login-frame bg-ungu">
+        <div class="left text-center">
+            <h3 class="Fredoka-One fw-bold text-white text-decoration-underline">Welcome To</h3>
+            
+            <img src="../Assets/img/logo.png" alt="logo" >
+            <h3 class="Franklin-Gothic-Demi fw-bold text-white mb-0 text-2">SiParkir</h3>
+        </div>
+        <div class="form-container">
+            <form method="post" name="LoginForm" id="LoginForm">
+                <h5 class="text-white franklin-gothic fs-24p">Sign In</h5>
+                <div id="alertMessage" class="alert" style="display: none;"></div>
+                <div class="form-group">
+                    <p class="franklin-gothic title-input">USERNAME</p>
+                    <input type="text" name="username" class="input-control" placeholder="Username" required>
+                </div>
+
+                <div class="form-group">
+                    <p class="franklin-gothic title-input">PASSWORD</p>
+                    <input type="password" name="password" placeholder="Password" class="input-control" required>
+                </div>
+                <div class="container-btn-login">
+                    <input type="button" name="loginButton" value="LOGIN" class=" button-login franklin-gothic" onclick="window.location.href='/Dashboard';">
+                    <!-- onklik hilangkan dan jadikan type submit -->
+                </div>
+            </form>
+            <p class="franklin-gothic-book text-white mt-2 -mb-2">Don't have an account? <a class="franklin-gothic-book text-white" href="?Register">Sign Up!</a></p>
+        </div>
+    </div>
+</div>
